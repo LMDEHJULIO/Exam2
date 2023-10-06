@@ -72,6 +72,7 @@ public class Car extends Vehicle implements Driveable{
     @Override
     public String toString() {
         return "Car{" +
+                "name" + getName() +
                 "numberOfDoors=" + getNumberOfDoors() +
                 ", extraTax=" + getExtraTax() +
                 ", price=" + getPrice() +
@@ -84,17 +85,17 @@ public class Car extends Vehicle implements Driveable{
 
 
 // Using main to test class
-    public static void main(String[] args) {
-        Car car1 = new Car("Tesla Model 3", 120, 49999.00F,  new Engine(Size.SMALL), 4);
-
-        car1.printVehicleType();
-        car1.printVehicleType();
-        car1.printNumberOfDoors();
-        System.out.println(car1.getPriceAfterTax());
-        System.out.println(car1.getPrice());
-        car1.printSpeed();
-        car1.toString();
-    }
+//    public static void main(String[] args) {
+//        Car car1 = new Car("Tesla Model 3", 120, 49999.00F,  new Engine(Size.SMALL), 4);
+//
+//        car1.printVehicleType();
+//        car1.printVehicleType();
+//        car1.printNumberOfDoors();
+//        System.out.println(car1.getPriceAfterTax());
+//        System.out.println(car1.getPrice());
+//        car1.printSpeed();
+//        System.out.println(car1);
+//    }
 
     @Override
     public void printVehicleType() {

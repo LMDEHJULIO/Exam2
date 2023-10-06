@@ -21,17 +21,6 @@ public abstract class Vehicle extends Product{
 
 //    public abstract float getPrice();
 
-
-    @Override
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public abstract void printVehicleType();
 
     public abstract float getPriceAfterTax();
